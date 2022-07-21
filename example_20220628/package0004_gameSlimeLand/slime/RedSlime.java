@@ -1,4 +1,4 @@
-package package0004_gameSlimeLand.slime;
+package example_20220628.package0004_gameSlimeLand.slime;
 
 //extends를 통해 NormalSlime의 데이터를 물려받았습니다 (상속)
 public class RedSlime extends normalSlime {

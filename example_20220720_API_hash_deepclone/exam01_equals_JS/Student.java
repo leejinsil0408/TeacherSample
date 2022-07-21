@@ -49,8 +49,9 @@ public class Student {
     }
 
     // Student 인스턴스 타입으로 아래 equals라는 메서드의 매개변수로 들어감 (단, Object로 "타입" 형변환)
-    @Override
+
     //
+    @Override
     public boolean equals(Object obj) {
         /* instanceof : 메모리 heap에 있는 인스턴스끼리 비교하는 것
             같은 핏줄이면 true
@@ -58,10 +59,11 @@ public class Student {
 
         if (obj instanceof Student) {
             Student student = (Student) obj;
-            if (groupNum == (student.getGroupNum()) && getName().equals(student.getName()))
-                System.out.println("동일한 사람입니다");
+            if (groupNum == student.getGroupNum() && name.equals(student.getName()))
+
             return true;
-            } System.out.println("다른 사람입니다");
-        return false;
-        }
+            } else {
+
+        }   return false;
     }
+}
